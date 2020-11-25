@@ -23,10 +23,10 @@ ggplot(data = ces, aes(x = white, y = ces_3_0_score)) +
   geom_hex()+
   labs(x = "White Population (Percent)",
          y= "CES 3.0 Score",
-       title = "Relationship Between % White Population and the Aggregate CalEnviroScreen (CES 3.0) Score") +
+       title = "Relationship Between % White Population \n and the Aggregate CalEnviroScreen (CES 3.0) Score") +
   scale_fill_gradient(low = "navy", high = "orange") +
   theme_minimal()
 ```
-
+This visualization depicts a trend between percentage of the white population and CES 3.0 scores, in which communities with a larger white population (around 75% or higher) have lower lower pollution burdens. Communities where zero percent of the population is white have higher CES scores, and therefore, pollution burdens. 
 
 
