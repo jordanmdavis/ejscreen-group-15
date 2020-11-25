@@ -22,8 +22,11 @@ ces <- read.csv(here("data", "ces3demographics.csv")) %>%
 ggplot(data = ces, aes(x = white, y = ces_3_0_score)) +
   geom_hex()+
   labs(x = "White Population (Percent)",
-         y= "CES Score") +
-  scale_fill_gradient(low = "darkorchid4", high = "magenta") +
+         y= "CES 3.0 Score",
+       title = "Relationship Between % White Population and the Aggregate CalEnviroScreen (CES 3.0) Score") +
+  scale_fill_gradient(low = "navy", high = "orange") +
   theme_minimal()
 ```
+
+
 
