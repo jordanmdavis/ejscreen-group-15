@@ -1,0 +1,18 @@
+---
+title: "Group 15 CA pollution burden"
+author: "Jordan Marisa Davis and Elena Ortiz"
+date: "11/25/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(janitor)
+library(here)
+```
+
+```{r}
+ces <- read.csv(here("data", "ces3demographics.csv")) %>% 
+  clean_names()
+```
